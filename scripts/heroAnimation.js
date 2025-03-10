@@ -1,4 +1,4 @@
-import textIntoSpan from "./utils/textInToSpan.js"
+import textIntoSpan from "./utils/textIntoSpan.js"
 import animateHeader from "./headerAnimation.js"
 
 // Анимирует секцию "Hero", создавая плавные появления и движения элементов
