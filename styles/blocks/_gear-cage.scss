@@ -1,0 +1,69 @@
+@use '../helpers' as *;
+
+.gear-cage {
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    padding-block: fluid(120, 40);
+  }
+
+  &__wrapper--mobile {
+    padding-block: rem(60);
+  }
+
+  &__left {
+    flex-basis: 50%;
+  }
+
+  &__list {
+    @include mobile {
+      display: grid;
+      row-gap: rem(30);
+    }
+  }
+
+  &__item {
+    display: grid;
+    row-gap: rem(15);
+    @include mobile-above{
+      height: 75vh;
+      width: 40vw;
+      display: grid;
+      row-gap: rem(20);
+      align-content: center;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+
+  &__right {
+    flex-basis: 50%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__wrapper-photo {
+    position: relative;
+    height: 40vh;
+    width: 40vw;
+    border-radius: rem(30);
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include mobile {
+      border-radius: rem(40);
+    }
+    
+    @include mobile-above {
+      position: absolute;
+    }
+  }
+}

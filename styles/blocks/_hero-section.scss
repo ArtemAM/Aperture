@@ -1,0 +1,47 @@
+@use '../helpers' as *;
+
+.capture-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 75vh;
+  overflow: hidden;
+
+  &__wrapper-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    display: grid;
+    row-gap: rem(15);
+    padding-right: fluid(100, 20);
+    padding-left: rem(16);
+    z-index: 2;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    color: var(--color-light);
+  }
+
+  &__description {
+    max-width: rem(300);
+  }
+}

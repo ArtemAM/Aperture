@@ -1,0 +1,16 @@
+@use '../helpers' as *;
+
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: fluid(20, 10);
+  }
+
+  &__img {
+    @include hover {
+      fill: var(--color-accent)
+    }
+  }
+}

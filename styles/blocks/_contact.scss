@@ -1,0 +1,21 @@
+@use '../helpers' as *;
+
+.contact {
+  &__inner {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: rem(13);
+    padding-block: rem(100);
+    text-align: center;
+  }
+
+  &__subtitle {
+    line-height: 1.3;
+    color: var(--color-main);
+  }
+
+  &__link {
+    justify-self: center;
+  }
+}

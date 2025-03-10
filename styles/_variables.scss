@@ -1,0 +1,17 @@
+@use './helpers' as *;
+
+:root {
+  --color-light: #FFFFFF;
+  --color-dark: #000000;
+  --color-main: #C0C0C0;
+  --color-accent: #FF5500;
+
+  --font-family: 'Poppins', sans-serif;
+
+  --container-width: #{rem(1168)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+
+  --gradient: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+}

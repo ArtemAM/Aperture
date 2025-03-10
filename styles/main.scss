@@ -1,0 +1,25 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/header';
+@use 'blocks/burger-button';
+@use 'blocks/hero';
+@use 'blocks/photo-metadata';
+@use 'blocks/works';
+@use 'blocks/photo-card';
+@use 'blocks/button';
+@use 'blocks/hero-section';
+@use 'blocks/comprasion-image';
+@use 'blocks/hero-section-3';
+@use 'blocks/gear-cage';
+@use 'blocks/contact';
+@use 'blocks/hero-section-2';
+@use 'blocks/split-images';
+@use 'blocks/footer';
+@use 'blocks/subscribe';
+@use 'blocks/social';
+@use 'blocks/clients';
+@use 'blocks/form';

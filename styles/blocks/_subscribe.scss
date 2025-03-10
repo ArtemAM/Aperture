@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(20);
+  padding-block: rem(30);
+  border-block: solid rem(2) var(--color-light);
+
+  @include mobile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__content {
+    display: grid;
+    row-gap: rem(20);
+  }
+
+  &__title {
+    letter-spacing: rem(2);
+    color: var(--color-light);
+    text-transform: uppercase;
+  }
+}

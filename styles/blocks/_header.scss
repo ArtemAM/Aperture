@@ -1,0 +1,62 @@
+@use '../helpers' as *;
+
+.header {
+  background-color: var(--color-dark);
+  
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: rem(16);
+    padding: rem(30) rem(32);
+    overflow: hidden;
+  }
+
+  &__logo {
+    width: rem(128);
+    height: rem(31);
+  }
+
+  &__list {
+    display: flex;
+    column-gap: rem(32);
+
+    @include mobile {
+      @include abs-center;
+      
+      flex-direction: column;
+      row-gap: rem(20);
+      font-size: rem(20);
+    }
+  }
+
+  &__overlay {
+    @include mobile {
+      z-index: 100;
+      position: fixed;
+      inset: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &-wrapper {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        transform: rotate(-45deg) scale(5, 1.2);
+      }
+    }
+
+    &-block {
+      @include mobile {
+        flex-basis: 33.3%;
+        background-color: var(--color-dark);
+        &:not(:last-child) {
+          border-bottom: solid rem(1) #971fcf;
+        }
+      }
+    }
+  }
+}

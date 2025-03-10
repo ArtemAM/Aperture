@@ -1,0 +1,21 @@
+@use '../helpers' as *;
+
+.photo-metadata {
+  &__list {
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+    display: flex;
+    column-gap: rem(16);
+  }
+
+  &__item {
+    display: flex;
+    column-gap: rem(6);
+  }
+
+  &__description {
+    color: var(--color-light);
+    font-size: rem(12);
+  }
+}

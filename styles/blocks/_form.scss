@@ -1,0 +1,43 @@
+@use '../helpers' as *;
+
+.form {
+  position: relative;
+  &__input {
+    height: rem(52);
+    width: rem(458);
+    padding: rem(6);
+    border-radius: rem(12);
+    background-color: var(--color-light);
+
+    @include mobile {
+      width: rem(350);
+    }
+
+    &::placeholder {
+      color: var(--color-main);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:user-invalid {
+      border: solid rem(2) var(--color-accent);
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: rem(6);
+    transform: translateY(-50%);
+    background-color: var(--color-dark);
+    border-radius: rem(12);
+    width: rem(63);
+    height: rem(30);
+    border: none;
+  }
+}

@@ -1,0 +1,51 @@
+@use '../helpers' as *;
+
+.hero {
+  --scale: 1;
+
+  display: flex;
+  align-items: flex-end;
+  height: fluid(716, 350);
+  text-align: center;
+  padding-block: rem(60);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient), 
+      url('../../images/hero/bg-image.jpg') center/cover no-repeat;
+    z-index: -1;
+    transform: scale(var(--scale));
+  }
+
+  &__info {
+    max-width: rem(600);
+    display: grid;
+    row-gap: rem(11);
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-dark);
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  &__title {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    & h1 {
+      margin: 0;
+    }
+    
+    & span {
+      display: inline-block;
+    }
+  }
+}

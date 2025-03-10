@@ -1,0 +1,25 @@
+@use '../helpers' as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: rem(6);
+  justify-self: start;
+  padding: rem(5) rem(15) rem(5) rem(5);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border-radius: fluid(14, 10);
+  transition-duration: var(--transition-duration);
+
+  &::before {
+    @include square(rem(32));
+
+    content: '';
+    background-image: url('../../icons/circle-black.svg');
+
+  }
+
+  @include hover {
+    color: var(--color-main);
+  }
+}

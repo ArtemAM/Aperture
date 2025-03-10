@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.works {
+  &__inner {
+    display: grid;
+    row-gap: fluid(42, 20);
+    padding-top: fluid(120, 50);
+    padding-bottom: fluid(100, 40);
+  }
+
+  &__headers {
+    justify-self: center;
+    text-align: center;
+  }
+
+  &__portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(16);
+    justify-self: center;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+}
