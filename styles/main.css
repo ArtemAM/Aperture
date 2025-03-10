@@ -555,7 +555,7 @@ a {
   width: 2rem;
   height: 2rem;
   content: "";
-  background-image: url("../../icons/circle-black.svg");
+  background-image: url("../icons/circle-black.svg");
 }
 @media (any-hover: hover) {
   .button:hover {
